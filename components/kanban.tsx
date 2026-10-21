@@ -144,7 +144,7 @@ export default function Kanban({board, userId}: KanbanProps) {
 
     setActiveId(null);
 
-    if (!over || board._id) return;
+    if (!over || !board._id) return;
 
     const activeId = active.id as string;
     const overId = over.id as string;
